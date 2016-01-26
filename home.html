@@ -1,0 +1,52 @@
+<!---start-wrap---->
+<!---start-header---->
+<div class="header" ng-include="'app/templates/topPortion.html'"></div>
+
+<!----//End-bottom-header---->
+<!---//End-header---->
+<!----start-image-slider---->
+<div class="clear"> </div>
+<div class="wrap main_content">
+    <div class="main_content_left">
+        <div class="content-left-top-grid">
+            <ul>
+                <li class="list_mh"><span><label>Category</span></li>
+                <div ng-repeat="price in priceList">
+                    <li class="list_mh"><span class="filter_block"><label><input type="checkbox" value="">Option 1</label></span></li>
+                </div>
+            </ul>
+        </div>
+    </div>
+    <div class="main_content_right">
+        <div class="row">
+            <div ng-repeat="items in shocaseItems">
+                <div class="col-sm-3 content_grid">
+                    <div class="product-grid-head">
+                        <!--  total view                         -->
+                    </div>
+                    <div class="product-pic">
+                        <a href="#"><img src="images/product1.jpg" title="product-name" /></a>
+                        <p>
+                            <a href="#"><small>Nike</small> HYPERVENOM <small>Phantom</small> FG</a>
+                            <span>Men's Firm-Ground Football Boot</span>
+                        </p>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-info-cust">
+                            <a href="details.html">Details</a>
+                        </div>
+                        <div class="product-info-price">
+                            <a href="details.html">&#8377; 380</a>
+                        </div>
+                        <div class="clear"> </div>
+                    </div>
+                    <div class="more-product-info">
+                        <span> </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---- start-bottom-grids---->
+<div ng-include="'app/templates/footer.html'"></div>
